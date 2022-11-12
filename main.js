@@ -26,7 +26,7 @@ function Login(e){
 
     if(user==null){
         result.innerHTML="wrong username"
-    }else if(username==data.username){
+    }else if(username==data.username && pass ==data.password){
         result.innerHTML="Logged In"
     }else{
         result.innerHTML="wrong password"

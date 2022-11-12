@@ -5,17 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            background-color: rgb(119, 190, 119);
+            height: auto;
+            width: 70%;
+        }
+        .form{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: auto;
+            gap: 3px;
+            margin: auto;
+            padding: 15px 0px 15px 0px;
+        }
+        h2,p,a{
+            text-align: center;
+        }
+        p{
+            font-weight:lighter;
+        }
+    </style>
 </head>
 <body>
+    <h2>Try Bonsai free with your <br> Workflow today</h2>
     <div class="container">
-        <form onsubmit="SignUp()" action="">
-           
-            <input type="text" id="username" placeholder="enter your username"><br>
-            <input type="email" name="" id="email" placeholder="enter your mail"><br>
-            <input type="password" name="" id="password" placeholder="password">
-            <button type="submit">Submit</button>
+        <form onsubmit="SignUp()" action="" class="form">
+            <label for="">EMAIL</label>
+            <input class="input" type="email" name="" id="email" placeholder="Enter your Email"><br>
+            <label for="Name">FULL NAME</label>
+            <input class="input" type="text" id="username" placeholder="Enter your Full Name"><br>
+            <label for="">PASSWORD</label>
+            <input class="input" type="password" name="" id="password" placeholder="password"><br>
             <p id="result">Welcome create account</p>
+            <p>By creating our account Please aceept ou </p>
+            <a href="">Term & Conditions</a>
+            <button>Create Free Account</button>
+            <hr><p>Already have a account </p>
+            <a href="login.html">LogIn</a>
         </form>
+        <div id="bottom">
+           
+        </div>
     </div>
     <script src="./main.js"></script>
 </body>
