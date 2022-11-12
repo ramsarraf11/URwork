@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            background-color: rgb(119, 190, 119);
+            height: auto;
+            width: 70%;
+            padding-top:80px ;
+        }
+        .form{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: auto;
+            gap: 3px;
+            margin: auto;
+            padding: 15px 0px 15px 0px;
+        }
+        a{
+            text-align: center;
+            color: gray;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <form onsubmit="Login()" action="">
+        <form onsubmit="Login()" action="" class="form">
            
             <input type="text" id="username" placeholder="enter your username"><br>
            
@@ -16,6 +41,8 @@
 
             <button type="submit">Login</button>
             <p id="result">Welcome login</p>
+            <a href="">Reset Password</a>
+            <a href="">Reset Verification Link</a>
         </form>
     </div>
     <script src="./main.js"></script>

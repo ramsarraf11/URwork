@@ -11,10 +11,14 @@
 }
 .nav{
     padding-top: 35px;
-    margin: 0px 45px 0px 70px;
+    margin: 0px 45px 0px 100px;
+    width: 30%;
 }
-.div-1>.nav>a{
-    margin-right: 55px;
+.nav1,#button{
+    margin-left: 10px;
+}
+.div-1>.nav>button{
+    margin-right: 5px;
 }
 .div-1>.div-1-child-2{
     padding-top: 30px;
@@ -28,6 +32,26 @@
     background-color: rgb(144, 212, 144);
     color: white;
 }
+.nav1{
+    position: relative;
+    display: inline-block;
+  }
+  .navdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .navdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .navdown a:hover {background-color: #ddd;}
+  .nav1:hover .navdown {display: block;}
 .div-2{
     display: flex;
     width: 90%;
