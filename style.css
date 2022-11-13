@@ -20,6 +20,12 @@
 }
 .nav1,#button{
     margin-left: 10px;
+    background: none;
+    border: none;
+}
+#but-2{
+    background: none;
+    border: none;
 }
 .div-1>.nav>button{
     margin-right: 5px;
