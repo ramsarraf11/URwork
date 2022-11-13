@@ -3,11 +3,15 @@
     width: 90%;
     display: flex;
     margin: auto;
+    padding-top: 10px;
     justify-content: space-between;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .div-1>.div-1-child-1{
     padding-top: 25px;
+}
+.div-1>.div-1-child-1>img{
+    height: 100px;
 }
 .nav{
     padding-top: 35px;
@@ -29,7 +33,7 @@
     width: 100px;
 }
 .div-1>.div-1-child-2>button:nth-child(2){
-    background-color: rgb(144, 212, 144);
+    background-color: rgb(211, 77, 77);
     color: white;
 }
 .nav1{
@@ -54,9 +58,9 @@
   .nav1:hover .navdown {display: block;}
 .div-2{
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     justify-content: space-between;
 }
 .div-2>.div-2-child-1{
@@ -72,7 +76,7 @@
 .div-2>.div-2-child-1>button{
     height: 40px;
     width: 100px;
-    background-color: rgb(144, 212, 144);
+    background-color: rgb(211, 77, 77);
     color: white;
 }
 .div-3{
@@ -140,7 +144,7 @@ a{
 .div-9>.div-9-child>button{
     height: 40px;
     width: 100px;
-    background-color: rgb(144, 212, 144);
+    background-color: rgb(211, 77, 77);
     color: white;
 }
 .div-10{
@@ -158,4 +162,70 @@ a{
 }
 .div-10>.div-10-child>h1{
     color: black;
+}
+@media all and (min-width: 320px) and (max-width: 498px){
+    .div-1>.div-1-child-1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        margin: auto;
+    }
+    .div1>.nav{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        margin: auto;
+    }
+    .div-1>.div-1-child-2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        margin: auto;
+    }
+    .div-4{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+    .div-5{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+    .div-5-child-2>img{
+        width: 200px;
+    }
+    .div-6{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        
+    }
+    .div-7{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    .div-8{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        margin: auto;
+    }
+    .div-10{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-left: 0px;
+    }
+}
+@media all and (min-width: 499px) and (max-width: 1024px){
+
 }
